@@ -91,14 +91,16 @@ h3{
     text-align: justify;
 }
 
-@media screen and (max-width:650px){
+/*@media screen and (max-width:650px){
     .page{
         width: 355px !important;
         grid-template-columns: auto;
         font-size: small !important;
     }
-   
-}/*
+    .name{
+        height: fit-content;
+    }
+}
     
 @media only screen and (min-width:992px){
     .page{
