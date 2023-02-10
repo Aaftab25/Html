@@ -5,78 +5,89 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        
+        <script src="Script.js"></script>
         <title>Employee</title>
     </head>
-    <body>
+    <body>  
         <center>
-            
-            <form method="post">
-                <div class="page">
-                <h1> Employee Details Form</h1>
-                <table >
-                   
-                    <tr>
-                        <td class="text"> Employee Name </td>
-                        <td>
-                            <input type="text" class="txtbox" name="empname" required/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text"> Age </td>
-                        <td>
-                            <input type="number" class="txtbox" name="age" min="18" max="55" required/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text"> Gender </td>
-                        <td>
-                            <input type="radio" class="rbtn" name="gender" value="male" required/><span class="text">Male</span>
-                            <input type="radio" class="rbtn" name="gender" value="female" required/><span class="text">Female</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text">  Designation </td>
-                        <td>
-                            <input type="text" class="txtbox" name="desi" required/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text"> Salary </td>
-                        <td>
-                            <input type="text" class="txtbox" class="txtbox" name="salary" required/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="text"> Location </td>
-                        <td>
-                            <input type="text" class="txtbox" name="location" required/>
-                        </td>
-                    </tr> <tr>
-                        <td class="text"> Email ID </td>
-                        <td>
-                            <input type="email" class="txtbox" name="email" required/>
-                        </td>
-                    </tr> 
-                    <tr>
-                        <td class="text"> Date of Joining </td>
-                        <td>
-                            <input type="date" class="txtbox" name="doj" required/>
-                        </td>
-                    </tr> 
-                    <tr>
-                        <td class="text"> Contact Number </td>
-                        <td>
-                            <input type="tel" class="txtbox" name="con" required/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="center">
-                            <input type="submit" class="btn" name="sub" id="sub" value="Submit">
-                        </td>
-                    </tr>
-                </table></div>
-            </form>
+            <section>
+                <form>
+                    <div class="page">
+                    <h1> Employee Details Form</h1>
+                    <table >
+                    
+                        <tr>
+                            <td class="text"><label for="key">Employee Name</label>  </td>
+                            <td>
+                                <input type="text" class="txtbox" id="key" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text"><label for="value">Age</label>  </td>
+                            <td>
+                                <input type="number" class="txtbox"  min="18" max="55" id="value" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text"> Gender </td>
+                            <td>
+                                <input type="radio" class="rbtn" id="gender" value="male" /><span class="text">Male</span>
+                                <input type="radio" class="rbtn" id="gender" value="female" /><span class="text">Female</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text">  Designation </td>
+                            <td>
+                                <input type="text" class="txtbox" id="desi" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text"> Salary </td>
+                            <td>
+                                <input type="text" class="txtbox" class="txtbox" id="salary" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text"> Location </td>
+                            <td>
+                                <input type="text" class="txtbox" id="location" />
+                            </td>
+                        </tr> <tr>
+                            <td class="text"> Email ID </td>
+                            <td>
+                                <input type="email" class="txtbox" id="email" />
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td class="text"> Date of Joining </td>
+                            <td>
+                                <input type="date" class="txtbox" id="doj" />
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td class="text"> Contact Number </td>
+                            <td>
+                                <input type="tel" class="txtbox" id="con" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <input type="button" class="btn" id="save" value="Save" />
+                            </td>
+                            <td align="center">
+                                <input type="button" class="btn" id="retrieve" value="Retrieve" />                                
+                            </td>
+                            <td>
+                                <input type="button" class="btn" id="review" value="Review">
+                            </td>
+                        </tr>
+                    </table></div>
+                </form>
+            </section>
+
+            <section id="data">
+                No Data
+            </section>
         </center>
     </body>
 </html>
